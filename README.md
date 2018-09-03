@@ -14,7 +14,7 @@ module.exports = {
 ```
 
 ```js
-// banana.js
+// ./settings/banana.js
 module.exports = {
   color: 'yellow'
 };
