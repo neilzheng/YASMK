@@ -10,6 +10,9 @@ module.exports = (cfgDir) => {
   files.forEach((file) => {
     const objName = path.basename(file, '.js');
     const theObject = require(file);
+    if (typeof theObject !== 'object') {
+      throw TypeError('config file export must be object');
+    }
     settings[objName] = theObject;
   });
 
