@@ -7,7 +7,7 @@ module.exports = (cfgDir) => {
   app.use(Settings(cfgDir));
 
   app.use((ctx) => {
-    ctx.body = ctx.settings;
+    ctx.body = ctx.Settings;
   });
 
   return app.listen();

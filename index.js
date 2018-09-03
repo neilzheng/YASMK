@@ -14,7 +14,7 @@ module.exports = (cfgDir) => {
   });
 
   return (ctx, next) => {
-    ctx.settings = settings;
+    ctx.Settings = settings;
     return next();
   };
 };
